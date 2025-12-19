@@ -1,0 +1,42 @@
+# ======================
+# Python
+# ======================
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# ======================
+# Data & ML artifacts
+# ======================
+# Raw / processed data
+data/*.csv
+data/*.json
+data/*.parquet
+
+# Embeddings / indexes / models
+*.pkl
+*.pt
+*.bin
+*.index
+*.faiss
+*.npy
+
+# ======================
+# Experiments / logs
+# ======================
+logs/
+runs/
+wandb/
+
+# ======================
+# OS / IDE
+# ======================
+.DS_Store
+.idea/
+.vscode/
+*.swp
