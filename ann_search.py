@@ -38,7 +38,7 @@ index.init_index(
 )
 
 index.add_items(embeddings, ids=np.arange(len(documents)))
-index.set_ef(50)
+index.set_ef(100)
 
 # -----------------------
 # Поиск

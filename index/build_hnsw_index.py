@@ -17,7 +17,7 @@ def build_index(
     index = hnswlib.Index(space="cosine", dim=dim)
     index.init_index(max_elements=n, ef_construction=200, M=16)
     index.add_items(embeddings, ids=np.arange(n))
-    index.set_ef(50)
+    index.set_ef(100)
 
     index.save_index(index_path)
 

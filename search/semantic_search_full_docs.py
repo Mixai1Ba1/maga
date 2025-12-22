@@ -20,7 +20,7 @@ def build_index_full_docs(path, limit=2000):
     index = hnswlib.Index(space="cosine", dim=dim)
     index.init_index(max_elements=len(texts), ef_construction=200, M=16)
     index.add_items(emb, ids=np.arange(len(texts)))
-    index.set_ef(50)
+    index.set_ef(100)
 
     return index, texts
 

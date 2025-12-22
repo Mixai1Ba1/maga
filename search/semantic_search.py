@@ -11,7 +11,7 @@ META_PATH = "index/meta_5000.pkl"
 def load_index(dim):
     index = hnswlib.Index(space="cosine", dim=dim)
     index.load_index(INDEX_PATH)
-    index.set_ef(50)
+    index.set_ef(100)
     return index
 
 def load_chunks():

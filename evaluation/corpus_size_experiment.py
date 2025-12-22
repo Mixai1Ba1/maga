@@ -34,7 +34,7 @@ def run_experiment(limit, query, max_chars=900):
     t1 = time.time()
     index.init_index(max_elements=len(chunks), ef_construction=200, M=16)
     index.add_items(embeddings, ids=np.arange(len(chunks)))
-    index.set_ef(50)
+    index.set_ef(100)
     index_time = time.time() - t1
 
     # поиск
