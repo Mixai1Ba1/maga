@@ -24,6 +24,7 @@ def build_index_full_docs(path, limit=2000):
 
     return index, texts
 
+
 def search_full_docs(query, index, texts, top_k=5):
     model = SentenceTransformer(
         "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
@@ -31,7 +32,7 @@ def search_full_docs(query, index, texts, top_k=5):
     q = model.encode([query], normalize_embeddings=True).astype(np.float32)
 
     labels, distances = index.knn_query(q, k=top_k)
-    return [(1 - d, texts[i]) for i, d in zip(labels[0], distances[0])]
+    return [(1 - d, int(i), texts[i]) for i, d in zip(labels[0], distances[0])]
 
 if __name__ == "__main__":
     query = "экономические последствия санкций"

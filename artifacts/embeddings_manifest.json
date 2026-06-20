@@ -1,0 +1,15 @@
+{
+  "data_path": "/Users/mihailbalasnikov/Desktop/maga/data/lenta.csv",
+  "limit": 2000,
+  "max_chars": 900,
+  "overlap": 150,
+  "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "embedding_dim": 384,
+  "normalize_embeddings": true,
+  "chunks_count": 4332,
+  "build_time_sec": 47.9915,
+  "embeddings_shape": [
+    4332,
+    384
+  ]
+}

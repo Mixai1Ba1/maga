@@ -1,0 +1,228 @@
+{
+  "artifacts": {
+    "embeddings_npy": {
+      "bytes": 15948416,
+      "mb": 15.2096
+    },
+    "meta_pkl": {
+      "bytes": 13784028,
+      "mb": 13.1455
+    },
+    "hnsw_index": {
+      "bytes": 16834968,
+      "mb": 16.0551
+    }
+  },
+  "build_metrics": {
+    "embeddings_build_time_sec": 69.2791,
+    "index_build_time_sec": 1.0458,
+    "embeddings_shape": [
+      10383,
+      384
+    ],
+    "chunks_count": 10383
+  },
+  "queries": [
+    {
+      "query": "экономические последствия санкций",
+      "semantic_chunks": {
+        "method": "Semantic HNSW (chunks)",
+        "encode": {
+          "avg_ms": 11.7421,
+          "median_ms": 11.0153,
+          "min_ms": 10.2356,
+          "max_ms": 13.3713
+        },
+        "search": {
+          "avg_ms": 0.4793,
+          "median_ms": 0.4697,
+          "min_ms": 0.4376,
+          "max_ms": 0.553
+        },
+        "total": {
+          "avg_ms": 12.2224,
+          "median_ms": 11.4858,
+          "min_ms": 10.6738,
+          "max_ms": 13.9259
+        }
+      },
+      "semantic_full_docs": {
+        "method": "Semantic HNSW (full docs)",
+        "encode": {
+          "avg_ms": 12.7916,
+          "median_ms": 12.1676,
+          "min_ms": 11.1504,
+          "max_ms": 15.5471
+        },
+        "search": {
+          "avg_ms": 0.6987,
+          "median_ms": 0.5094,
+          "min_ms": 0.4727,
+          "max_ms": 1.4853
+        },
+        "total": {
+          "avg_ms": 13.4914,
+          "median_ms": 12.9985,
+          "min_ms": 11.6866,
+          "max_ms": 16.02
+        }
+      },
+      "tfidf": {
+        "method": "TF-IDF",
+        "fit_time_ms": 812.0504,
+        "encode": {
+          "avg_ms": 0.1999,
+          "median_ms": 0.1627,
+          "min_ms": 0.1465,
+          "max_ms": 0.2783
+        },
+        "search": {
+          "avg_ms": 3.613,
+          "median_ms": 3.5946,
+          "min_ms": 3.3735,
+          "max_ms": 3.8983
+        },
+        "total": {
+          "avg_ms": 3.8135,
+          "median_ms": 3.8513,
+          "min_ms": 3.5203,
+          "max_ms": 4.1778
+        }
+      }
+    },
+    {
+      "query": "рост цен на нефть",
+      "semantic_chunks": {
+        "method": "Semantic HNSW (chunks)",
+        "encode": {
+          "avg_ms": 11.9582,
+          "median_ms": 11.3465,
+          "min_ms": 10.6921,
+          "max_ms": 13.6047
+        },
+        "search": {
+          "avg_ms": 0.3638,
+          "median_ms": 0.3514,
+          "min_ms": 0.3468,
+          "max_ms": 0.3913
+        },
+        "total": {
+          "avg_ms": 12.3229,
+          "median_ms": 11.6946,
+          "min_ms": 11.0438,
+          "max_ms": 13.9878
+        }
+      },
+      "semantic_full_docs": {
+        "method": "Semantic HNSW (full docs)",
+        "encode": {
+          "avg_ms": 11.1644,
+          "median_ms": 10.9582,
+          "min_ms": 10.3015,
+          "max_ms": 12.5272
+        },
+        "search": {
+          "avg_ms": 0.3809,
+          "median_ms": 0.3817,
+          "min_ms": 0.354,
+          "max_ms": 0.4125
+        },
+        "total": {
+          "avg_ms": 11.5465,
+          "median_ms": 11.3128,
+          "min_ms": 10.6568,
+          "max_ms": 12.9426
+        }
+      },
+      "tfidf": {
+        "method": "TF-IDF",
+        "fit_time_ms": 812.0504,
+        "encode": {
+          "avg_ms": 0.1892,
+          "median_ms": 0.1788,
+          "min_ms": 0.1646,
+          "max_ms": 0.251
+        },
+        "search": {
+          "avg_ms": 3.6861,
+          "median_ms": 3.5862,
+          "min_ms": 3.4505,
+          "max_ms": 4.1709
+        },
+        "total": {
+          "avg_ms": 3.8758,
+          "median_ms": 3.757,
+          "min_ms": 3.6301,
+          "max_ms": 4.351
+        }
+      }
+    },
+    {
+      "query": "чемпионат мира по футболу",
+      "semantic_chunks": {
+        "method": "Semantic HNSW (chunks)",
+        "encode": {
+          "avg_ms": 10.2882,
+          "median_ms": 10.2121,
+          "min_ms": 9.7527,
+          "max_ms": 11.0191
+        },
+        "search": {
+          "avg_ms": 0.3485,
+          "median_ms": 0.3422,
+          "min_ms": 0.3404,
+          "max_ms": 0.3681
+        },
+        "total": {
+          "avg_ms": 10.6378,
+          "median_ms": 10.5552,
+          "min_ms": 10.0955,
+          "max_ms": 11.3607
+        }
+      },
+      "semantic_full_docs": {
+        "method": "Semantic HNSW (full docs)",
+        "encode": {
+          "avg_ms": 11.8661,
+          "median_ms": 11.4978,
+          "min_ms": 11.2712,
+          "max_ms": 12.7029
+        },
+        "search": {
+          "avg_ms": 0.4941,
+          "median_ms": 0.489,
+          "min_ms": 0.465,
+          "max_ms": 0.5357
+        },
+        "total": {
+          "avg_ms": 12.3613,
+          "median_ms": 12.0347,
+          "min_ms": 11.737,
+          "max_ms": 13.1926
+        }
+      },
+      "tfidf": {
+        "method": "TF-IDF",
+        "fit_time_ms": 812.0504,
+        "encode": {
+          "avg_ms": 0.1887,
+          "median_ms": 0.1853,
+          "min_ms": 0.1538,
+          "max_ms": 0.2239
+        },
+        "search": {
+          "avg_ms": 3.4713,
+          "median_ms": 3.4992,
+          "min_ms": 3.3302,
+          "max_ms": 3.6195
+        },
+        "total": {
+          "avg_ms": 3.6607,
+          "median_ms": 3.6814,
+          "min_ms": 3.5455,
+          "max_ms": 3.8439
+        }
+      }
+    }
+  ]
+}
